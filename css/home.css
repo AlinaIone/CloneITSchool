@@ -1,0 +1,294 @@
+/* Welcome */
+.welcome {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--bg-primary);
+  font-family: "Work Sans", sans-serif;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.welcome .container {
+  flex-grow: 1;
+}
+
+.welcome h1,
+.welcome p {
+  color: var(--text-white);
+}
+
+.welcome p {
+  font-family: "Work Sans", sans-serif;
+  font-size: var(--fs-medium);
+  padding: var(--spacing-small) 0;
+  margin-bottom: var(--spacing-tiny);
+}
+.welcome h1 + p {
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.welcome span::after {
+  color: var(--text-secondary);
+  content: "}";
+}
+
+.welcome span::before {
+  color: var(--text-secondary);
+  content: "{";
+}
+
+.welcome img {
+  height: 25px;
+  width: auto;
+
+  position: relative;
+  top: 5px;
+
+  margin: 0 var(--spacing-tiny);
+}
+
+.welcome a {
+  width: 260px;
+
+  font-size: var(--fs-small);
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+
+  padding: var(--spacing-small);
+  border: 2px solid var(--bg-button);
+  border-radius: 4px;
+
+  display: inline-block;
+  text-align: center;
+
+  background-color: var(--bg-button);
+  color: var(--text-white);
+}
+
+.welcome a:hover {
+  background-color: transparent;
+  color: var(--bg-button);
+}
+/* Mobile Welcome  */
+@media (max-width: 768px) {
+  .welcome h1 {
+    font-size: 2.5rem;
+  }
+
+  .welcome img {
+    margin: var(--spacing-tiny);
+  }
+
+  .welcome a {
+    display: none;
+  }
+}
+/* Courses calendar */
+.courses h2 {
+  font-family: "Work Sans", sans-serif;
+  font-weight: bold;
+  text-align: center;
+  padding: var(--spacing-large);
+}
+.courses .course-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.courses .course-packer {
+  width: calc(100% / 4);
+  padding: 0 var(--spacing-small);
+}
+
+.courses .course {
+  width: 100%;
+  height: 7.25rem;
+  border: 1px solid #dddddd;
+  border-radius: 2%;
+
+  margin-bottom: calc(var(--spacing-small) * 2);
+}
+
+.courses h3 {
+  color: var(--text-primary);
+
+  padding: var(--spacing-tiny);
+}
+
+.courses .info {
+  font-family: "Poppins", sans-serif;
+  font-size: var(--fs-tiny);
+  padding: var(--spacing-tiny);
+}
+
+.courses .material-icons {
+  font-size: 1rem;
+  position: relative;
+  top: 2px;
+}
+
+.courses .color-bar {
+  height: 5px;
+  border-radius: 5px;
+
+  position: relative;
+  top: 16px;
+
+  background-color: #4599d1;
+  margin: auto;
+  margin-bottom: 0;
+}
+
+.courses .orange-bar {
+  background-color: #ee5c3b;
+}
+
+.courses a {
+  width: 260px;
+
+  font-size: var(--fs-small);
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+
+  padding: var(--spacing-small);
+  border: 2px solid var(--bg-button);
+  border-radius: 4px;
+  margin: auto;
+  margin-top: calc(var(--spacing-small) * 3);
+  margin-bottom: calc(var(--spacing-small) * 4);
+
+  text-align: center;
+
+  background-color: var(--bg-button);
+  color: var(--text-white);
+}
+
+.courses a:hover {
+  background-color: transparent;
+  color: var(--bg-button);
+}
+/* Mobile Courses Calendar */
+@media (max-width: 1160px) {
+  .courses h3 {
+    font-size: var(--fs-medium);
+  }
+}
+
+@media (max-width: 992px) {
+  .courses h3 {
+    font-size: var(--fs-large);
+  }
+  .courses .course-packer {
+    width: calc(100% / 2);
+  }
+}
+
+@media (max-width: 768px) {
+  .courses .course-packer {
+    width: 100%;
+  }
+}
+
+/* About */
+.it-school-info {
+  background-color: var(--bg-secondary);
+}
+
+.it-school-info p {
+  text-align: center;
+  padding: 0 var(--spacing-small);
+  margin-bottom: calc(var(--spacing-small) + var(--spacing-tiny));
+}
+
+.it-school-info .img-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  padding: 0 var(--spacing-small);
+  margin-bottom: calc(var(--spacing-small) + var(--spacing-tiny));
+}
+
+.it-school-info .img-packer {
+  width: calc(100% / 3);
+
+  padding: 0 var(--spacing-small);
+}
+
+.it-school-info img {
+  width: 100%;
+  height: auto;
+
+  padding: 10px;
+  background: linear-gradient(45deg, var(--bg-secondary), #fafafa);
+}
+
+/* Mobile About */
+@media (max-width: 992px) {
+  .it-school-info .img-packer {
+    width: calc(100% / 2);
+  }
+}
+
+@media (max-width: 768px) {
+  .it-school-info .img-packer {
+    width: 100%;
+  }
+  .it-school-info p {
+    font-size: calc(var(--fs-small) - 2px);
+  }
+}
+
+/* Parteners */
+.parteners .logo-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  margin: 0 var(--spacing-large);
+}
+
+.parteners .img-packer {
+  width: 25%;
+  padding: 0 var(--spacing-small);
+
+  position: relative;
+}
+
+.parteners img {
+  width: 120px;
+  min-height: 120px;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+.parteners img:hover {
+  -webkit-filter: grayscale(0%);
+  filter: none;
+}
+
+/* Mobile Parteners */
+@media (max-width: 992px) {
+  .parteners .img-packer {
+    width: calc(100% / 3);
+  }
+
+  .parteners .img-packer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .parteners .img-packer {
+    width: calc(100% / 2);
+  }
+}

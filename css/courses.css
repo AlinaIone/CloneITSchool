@@ -1,0 +1,115 @@
+/* Welcome section */
+.title-courses {
+  background-color: var(--bg-primary);
+  height: 50vh;
+
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+/* General description */
+.container > p {
+  padding: var(--spacing-tiny);
+  margin-bottom: var(--spacing-small);
+}
+
+/* Courses */
+.courses-details-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.courses-details-container .card-wrapper {
+  padding: 0 var(--spacing-small);
+  width: calc(100% / 3);
+  margin-bottom: calc(2 * var(--spacing-small));
+}
+
+.courses-details-container .course-card {
+  width: 100%;
+  border: 1px solid rgba(102, 102, 102, 0.272);
+  border-radius: 5px;
+  padding: 3px;
+
+  display: flex;
+  flex-direction: column;
+  align-content: space-around;
+  row-gap: 20px;
+}
+
+.courses-details-container img {
+  width: 100%;
+  height: auto;
+}
+
+.courses-details-container .content {
+  display: flex;
+  flex-direction: column;
+  padding: var(--spacing-tiny);
+  row-gap: 20px;
+  color: #666;
+}
+
+.courses-details-container .content h3 {
+  font-family: "Work Sans", sans-serif;
+  font-weight: bold;
+  color: var(--text-primary);
+}
+
+.courses-details-container .content .certification {
+  display: flex;
+  font-family: "Poppins", sans-serif;
+}
+
+.courses-details-container .content .certification img {
+  height: 25px;
+  width: auto;
+  padding-left: var(--spacing-tiny);
+}
+
+.courses-details-container .content .extra-info .material-icons {
+  font-size: var(--fs-medium);
+  vertical-align: text-top;
+}
+
+.courses-details-container .content .extra-info > span {
+  padding-right: var(--spacing-small);
+  font-family: "Poppins", sans-serif;
+}
+
+.courses-details-container .content a {
+  height: auto;
+  width: 80px;
+
+  font-size: var(--fs-tiny);
+  font-family: "Poppins", sans-serif;
+
+  padding: 5px var(--spacing-tiny);
+  border: 2px solid var(--bg-button);
+  border-radius: 4px;
+  margin-bottom: var(--spacing-small);
+
+  display: inline-block;
+  text-align: center;
+
+  background-color: var(--bg-button);
+  color: var(--text-white);
+}
+
+/* Mobile courses */
+@media (max-width: 992px) {
+  .courses-details-container .card-wrapper {
+    width: 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  .courses-details-container .card-wrapper {
+    width: 100%;
+  }
+  .title-courses h1 {
+    font-size: var(--fs-xl);
+  }
+}

@@ -1,0 +1,175 @@
+/* Welcome */
+.title {
+  background-image: url(https://www.itschool.ro/img/cover-pages/contact-b.jpg);
+  background-size: cover;
+
+  background-color: var(--bg-primary);
+
+  background-position: center;
+  background-repeat: no-repeat;
+
+  height: 50vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+}
+/* Mobile welcome */
+@media (max-width: 768px) {
+  .title h1 {
+    font-size: 3rem;
+  }
+}
+
+/* General Informations */
+.contact-info .contact-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact-info ul {
+  width: 50%;
+  margin: var(--spacing-small);
+}
+
+.contact-info li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: var(--spacing-small) 0;
+  border-bottom: 1px solid rgb(169, 164, 164);
+}
+
+.contact-info span {
+  font-size: var(--fs-small);
+  position: relative;
+  top: 2px;
+
+  margin-right: var(--spacing-tiny);
+  padding: var(--spacing-tiny);
+
+  background-color: var(--bg-dark);
+  border-radius: 50%;
+  color: var(--text-white);
+}
+
+.contact-info .text-align {
+  margin-bottom: -4px;
+}
+
+/* Mobile general informations */
+@media (max-width: 992px) {
+  .contact-info ul {
+    margin: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .title h1 {
+    font-size: var(--fs-xl);
+  }
+  .contact-info h2 {
+    padding: var(--spacing-medium);
+  }
+  .contact-info .contact-container {
+    display: block;
+  }
+  .contact-info ul {
+    width: auto;
+  }
+  .contact-info span {
+    padding: var(--spacing-tiny);
+  }
+}
+
+/* Locations IT School */
+.locations .location-container {
+  display: flex;
+  justify-content: space-between;
+
+  margin-bottom: var(--spacing-xl);
+}
+
+.locations .location-list {
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  margin-left: var(--spacing-small);
+}
+
+.locations .location-box-wrapper {
+  width: 50%;
+  padding: 0 var(--spacing-tiny);
+}
+
+.locations .location-box {
+  width: 100%;
+  margin-top: var(--spacing-medium);
+}
+
+.locations .city {
+  background-color: var(--bg-dark);
+  color: var(--text-light);
+  border-bottom: 2px solid red;
+
+  padding: var(--spacing-tiny);
+  margin-bottom: var(--spacing-tiny);
+}
+
+.locations .map {
+  width: 50%;
+
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: -40px;
+}
+
+.locations img {
+  width: 90%;
+  height: auto;
+
+  margin: auto;
+}
+
+/* Mobile locations */
+@media (max-width: 992px) {
+  .locations .location-container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .locations .location-list {
+    width: 100%;
+  }
+  .locations .map {
+    width: 70%;
+    position: static;
+  }
+}
+
+@media (max-width: 768px) {
+  .locations h2 {
+    padding: var(--spacing-medium);
+  }
+  .locations .location-container {
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+  }
+
+  .locations .location-list {
+    width: 100%;
+    margin: auto;
+  }
+  .locations .location-box-wrapper {
+    width: 100%;
+  }
+  .locations .map {
+    width: 100%;
+  }
+}

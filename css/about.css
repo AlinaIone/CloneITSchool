@@ -1,0 +1,90 @@
+/* Trainers */
+
+.trainers .trainers-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: var(--spacing-xl);
+}
+
+.trainers .card-wrapper {
+  width: 25%;
+  padding: 0 var(--spacing-small);
+}
+
+.trainers .trainer-card {
+  width: 100%;
+  /* min-height: 450px; */
+  height: 450px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 0 var(--spacing-small);
+  margin-top: calc(2 * var(--spacing-xl));
+
+  border: 1px solid rgba(102, 102, 102, 0.272);
+  border-radius: 5px;
+}
+
+.trainers .trainer-card img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+
+  margin-top: -80px;
+
+  filter: grayscale(100%);
+}
+
+.trainers .trainer-card h3 {
+  width: 100%;
+
+  font-size: var(--fs-medium);
+  text-align: center;
+
+  border-radius: 6px;
+  padding: var(--spacing-tiny) 0;
+  margin-top: -30px;
+  margin-bottom: var(--spacing-small);
+
+  background-color: var(--bg-dark);
+  z-index: 2;
+}
+
+/* Mobile trainers */
+@media (max-width: 1130px) {
+  .trainers .card-wrapper {
+    padding: 0 var(--spacing-tiny);
+  }
+}
+
+@media (max-width: 992px) {
+  .trainers .card-wrapper {
+    width: calc(100% / 3);
+  }
+  .trainers .trainer-card {
+    height: 430px;
+  }
+}
+
+@media (max-width: 768px) {
+  .trainers .card-wrapper {
+    width: 50%;
+  }
+  .trainers .trainer-card {
+    height: 350px;
+  }
+  .trainers .trainer-card p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .trainers .card-wrapper {
+    width: 100%;
+  }
+  .trainers .trainer-card {
+    height: auto;
+  }
+}
