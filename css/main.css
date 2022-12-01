@@ -199,7 +199,7 @@ nav .secondary-menu a {
   }
 
   /* Checkbox */
-  nav input[type="checkbox"] {
+  /* nav input[type="checkbox"] {
     display: block;
     position: absolute;
     right: 15px;
@@ -209,21 +209,10 @@ nav .secondary-menu a {
 
     opacity: 0;
     cursor: pointer;
-  }
+  } */
   /* Hide menu primary*/
   nav .menu-primary {
     display: none;
-  }
-  /* Hide menu secondary */
-  nav .about-us:hover .secondary-menu {
-    display: none;
-  }
-  nav .menu-primary .dropdown-arrow {
-    display: none;
-  }
-  /* Display menu mobile */
-  input[type="checkbox"]:checked + .menu-primary {
-    display: flex;
     flex-direction: column;
 
     position: fixed;
@@ -233,6 +222,25 @@ nav .secondary-menu a {
     width: 100%;
     background-color: var(--bg-dark);
   }
+  /* Hide menu secondary */
+  /* nav .about-us:hover .secondary-menu {
+    display: none;
+  }
+  nav .menu-primary .dropdown-arrow {
+    display: none;
+  } */
+  /* Display menu mobile */
+  /* input[type="checkbox"]:checked + .menu-primary {
+    display: flex;
+    flex-direction: column;
+
+    position: fixed;
+    top: calc(var(--mobile-logo-height) + 2 * var(--spacing-small));
+    left: 0;
+
+    width: 100%;
+    background-color: var(--bg-dark);
+  } */
 }
 
 /* Footer */

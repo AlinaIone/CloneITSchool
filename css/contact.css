@@ -94,7 +94,7 @@
 }
 
 .locations .location-list {
-  width: 50%;
+  /* width: 50%; */
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -105,13 +105,14 @@
 .locations .location-box-wrapper {
   width: 50%;
   padding: 0 var(--spacing-tiny);
+  margin-bottom: var(--spacing-medium);
 }
 
-.locations .location-box {
+/* .locations .location-box {
   width: 100%;
   margin-top: var(--spacing-medium);
 }
-
+*/
 .locations .city {
   background-color: var(--bg-dark);
   color: var(--text-light);

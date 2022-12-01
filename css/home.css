@@ -249,18 +249,19 @@
   justify-content: space-between;
 
   margin: 0 var(--spacing-large);
+  margin-bottom: var(--spacing-small);
 }
 
 .parteners .img-packer {
   width: 25%;
-  padding: 0 var(--spacing-small);
+  padding: var(--spacing-small);
 
   position: relative;
 }
 
 .parteners img {
   width: 120px;
-  min-height: 120px;
+  /* min-height: 120px; */
 
   margin-left: auto;
   margin-right: auto;
